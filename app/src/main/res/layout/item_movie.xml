@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        android:layout_margin="6dp"
+        card_view:cardCornerRadius="4dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title_movie"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_marginTop="8dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="8dp"
+                android:text="lara croft"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                card_view:layout_constraintHorizontal_bias="0.0"
+                card_view:layout_constraintLeft_toLeftOf="parent"
+                card_view:layout_constraintRight_toRightOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlHardcoded"/>
+
+            <TextView
+                android:id="@+id/relase_date_movie"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:gravity="left|center_vertical"
+                android:text="29 Feb 2018"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                card_view:layout_constraintHorizontal_bias="0.0"
+                card_view:layout_constraintLeft_toLeftOf="parent"
+                card_view:layout_constraintRight_toRightOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlHardcoded"/>
+
+            <ImageView
+                android:id="@+id/poster_movie_image_view"
+                android:layout_width="320dp"
+                android:layout_height="160dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="4dp"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintLeft_toLeftOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/relase_date_movie"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/description"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="160dp"-->
+                <!--android:layout_marginEnd="4dp"-->
+                <!--android:layout_marginStart="4dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:inputType="textMultiLine"-->
+                <!--android:scrollbars="vertical"-->
+                <!--android:text="TextView"-->
+                <!--android:verticalScrollbarPosition="defaultPosition"-->
+                <!--card_view:layout_constraintEnd_toEndOf="parent"-->
+                <!--card_view:layout_constraintStart_toEndOf="@+id/poster_movie_image_view"-->
+                <!--card_view:layout_constraintTop_toBottomOf="@+id/relase_date_movie"/>-->
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:clickable="false"
+                android:numStars="5"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:isIndicator="true"
+                android:stepSize="0.05"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/relase_date_movie"
+                card_view:layout_constraintVertical_bias="1.0"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

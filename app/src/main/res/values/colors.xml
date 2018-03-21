@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorBlueLight">#b3edd3</color>
+    <color name="colorNavyLight">#7aa7fc</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="list_item_higligt_selector">#4e23</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="gray">#ffffff</color>
+    <color name="colorGary">#efefef</color>
+</resources>
